@@ -1,4 +1,4 @@
-h1. dotfiles
+# dotfiles
 
 This is my github repo for my dotfiles.
 
