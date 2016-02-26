@@ -1,0 +1,26 @@
+[user]
+	name = Wahid Sadik
+	email = wahidsadik@users.noreply.github.com 
+[push]
+	default = tracking
+[format]
+
+[alias]
+	amend = commit --amend -a
+	br = branch 
+	co = checkout
+	ds = diff --staged
+	di = diff
+	fetchall = fetch -v --all
+	log-fancy = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+	log-me = !UN=$(git config user.name)&& git log --author="\"$UN\"" --pretty=format:'%h %cd %s' --date=short
+	log-nice = log --graph --decorate --pretty=oneline --abbrev-commit
+	log2 = log --pretty=format:'%Cred%h%Creset %aN -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
+	panic = !tar cvf ../git_panic.tar *
+	st = status
+	wdiff = diff --word-diff=plain
+	wtf = !git-wtf
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	conflict = ls-files -u
+	ac = !git add -A && git commit
+	profile-github = config user.email \"wahidsadik@users.noreply.github.com\"
